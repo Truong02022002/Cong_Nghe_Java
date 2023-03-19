@@ -19,9 +19,6 @@ public class MySQLConntUtils {
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		String connectionURL = "jdbc:mysql://" + hostname + ":3306/" + dbName;
 		Connection conn = DriverManager.getConnection(connectionURL, username, password);
-//		Statement stml = conn.createStatement();
-//		String usr = "SELECT * FROM user_account";
-//		String pass
 		return conn;
 	}                   
 }
